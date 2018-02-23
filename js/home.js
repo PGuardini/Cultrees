@@ -1,26 +1,34 @@
-var sliderImagens=  [
-    "imagens/peep.jpg",
-    "imagens/rafael_pepperoni.png",
-    "imagens/valdemar.jpg"
-];
-//estas imagens são apenas para testes, favor trocar
-
-var contador = 0;
-
-function sliderAnterior(){
-   var slider = document.getElementById("slider");
-   contador--;
-   if (contador < 0) {
-       contador = sliderImagens.length-1;
-   }
-   slider.src = sliderImagens[contador]; 
-}   
-
-function sliderPosterior(){
-    var slider = document.getElementById("slider");
-    contador++;
-    if (contador >= sliderImagens.length) {
-        contador = 0;
+var x;
+var path = "imagens/";
+x=0;
+var imgs =new Array(path+'forest.jpg',path+'valley.jpg',path+'nature.jpg',path+'jungle.jpg');
+var length = imgs.length;
+var img = document.getElementById("slideImage");
+function slide(){
+    x++;
+    if(x<length){
+        img.src = imgs[x];
+    }else if(x>=length){
+        x = 0;
+        img.src = imgs[x];
     }
-    slider.src = sliderImagens[contador];
 }
+function slideBack(){
+    x--;
+    if(x>=0){
+        img.src = imgs[x];
+    }else if(x <= length){
+        x = length-1;
+        img.src = imgs[x];
+    }
+}
+function autoSlide(){
+    if(x<length){
+        img.src = imgs[x];
+    }else if(x>=length){
+        x = 0;
+        img.src = imgs[x];
+    }
+    x++;
+}
+setInterval(autoSlide, 5000);

@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" href="css/cultreesHome.css">
     </head>
-    <body>
+    <body onload="autoSlide()">
         <header id="header">
             <meta charset="UTF-8">
             <span id="cul">Cul</span><span id="trees">Trees</span>
@@ -26,12 +26,12 @@
             </section>
         </nav>
         <div class="clear"></div>
-        <section id="sliderHome">
-            <button class="sliderButton" onclick="sliderAnterior()"><</button>
-            <img id="slider" src="imagens/peep.jpg">
-            <button class="sliderButton" onclick="sliderPosterior()">></button>
-
-        </section>
+        
+        <div id="slider">
+            <button onclick="slide()" id="sldLeft" class="sldBtn"></button>
+            <button onclick="slideBack()" id="sldRight" class="sldBtn"></button>
+            <img id="slideImage">
+        </div>
         <script type="text/javascript" src="js/home.js"></script>
     </body>
 </html>

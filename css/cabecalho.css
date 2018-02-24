@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@font-face {
+    font-family: 'magnablack_condensed';
+    src:url('../fontes/magna-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #f0f0e8;
+}
+#cul{
+    color: #514b4b;
+    float: left;
+}
+#trees{
+    color: #c8d45b;
+    float: left;
+}
+#menu{
+    width:100%;
+    height: 5%;
+    text-align: center;
+    background: #dcf1f1;
+    position: sticky;
+    top: 0;
+    z-index: 1543;
+}
+.itemMenu{
+    margin-left: 30%;
+}
+.itemMenu a{
+    float: left;
+    width: 10%;
+    margin: 1%;
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+#logo{
+    float:left !important;
+    font-family: 'magnablack_condensed';
+    text-align: left;
+    margin: 0.5%;
+    font-size: 150%;
+}

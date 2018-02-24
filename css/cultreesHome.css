@@ -9,30 +9,30 @@
 body{
     margin: 0%;
     font-family: 'Josefin Sans', sans-serif;
-    background: #F2F2F2;
+    background: #f0f0e8;
 }
 #header{
     width: 100%;
     float: left;
+    background:#dcf1f1;
     font-family: 'magnablack_condensed';
     text-align: center !important;
     font-size: 200%;
     padding-top: 2%;
-    margin-bottom: 3%;
 }
 #cul{
-    font-size: 300%;
+    font-size: 250%;
     color: #514b4b;
 }
 #trees{
-    font-size: 300%;
+    font-size: 250%;
     color: #c8d45b;
 }
 #menu{
     width:100%;
     height: 5%;
     text-align: center;
-    background: #75604d;
+    background: #dcf1f1;
     position: sticky;
     top: 0;
     z-index: 1543;
@@ -41,12 +41,10 @@ body{
     margin-left: 30%;
 }
 .itemMenu a{
-	font-size: 25px;
     float: left;
     width: 10%;
     margin: 1%;
     text-decoration: none;
-    color: #F2F2F2;
 }
 .clear{
     clear: both;
@@ -82,7 +80,7 @@ body{
     z-index: 400;
     height: inherit;
     position: absolute;
-    background: #5858587a;
+    background: #ffffff00;
     border: none;
 }
 #sldLeft{

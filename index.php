@@ -1,5 +1,5 @@
 <?php
-    include 'html/cabecalho.html'
+    include "html/cabecalho.html";
 ?>
     <body onload="autoSlide()">
 
@@ -12,5 +12,7 @@
             <img id="slideImage">
         </div>
         <script type="text/javascript" src="js/home.js"></script>
-    </body>
-</html>
+
+<?php
+    include "html/rodape.html";
+?>
